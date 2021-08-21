@@ -1,0 +1,20 @@
+CREATE DATABASE `votacao` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `pauta` (
+  `cod_pauta` bigint NOT NULL AUTO_INCREMENT,
+  `datafim` datetime(6) NOT NULL,
+  `datainicio` datetime(6) NOT NULL,
+  `descricao` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`cod_pauta`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+
+CREATE TABLE `voto` (
+  `cod_voto` bigint NOT NULL AUTO_INCREMENT,
+  `cod_pauta` bigint NOT NULL,
+  `cpf` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `data` datetime(6) NOT NULL,
+  `opcao` bit(1) NOT NULL,
+  PRIMARY KEY (`cod_voto`),
+  UNIQUE KEY `idx_pauta_cpf` (`cod_pauta`,`cpf`),
+  CONSTRAINT `FK_pauta` FOREIGN KEY (`cod_pauta`) REFERENCES `pauta` (`cod_pauta`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
