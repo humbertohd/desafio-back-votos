@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.desafio.votacao.MysqlApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.719 s - in com.desafio.votacao.MysqlApiApplicationTests

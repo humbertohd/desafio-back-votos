@@ -1,0 +1,14 @@
+com\desafio\votacao\repository\PautaRepository.class
+com\desafio\votacao\repository\VotoRepository.class
+com\desafio\votacao\dto\CpfDTO.class
+com\desafio\votacao\dto\PautaFiltroDTO.class
+com\desafio\votacao\service\PautaService.class
+com\desafio\votacao\controller\VotoController.class
+com\desafio\votacao\controller\PautaController.class
+com\desafio\votacao\dto\VotoFiltroDTO.class
+com\desafio\votacao\model\Voto.class
+com\desafio\votacao\dto\ResultadoDTO.class
+com\desafio\votacao\MysqlApiApplication.class
+com\desafio\votacao\service\VotoService.class
+com\desafio\votacao\dto\PautaDTO.class
+com\desafio\votacao\model\Pauta.class
